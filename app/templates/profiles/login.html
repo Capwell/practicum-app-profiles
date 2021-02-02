@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+  <h1 class="mt-2">Авторизация</h1>
+  <hr class="mt-0 mb-4">
+  <form action="{% url 'profiles:login' %}" method="post">
+    {% csrf_token %}
+    {% bootstrap_form form show_label=False %}
+    {% bootstrap_button "Войти" button_type="submit" button_class="btn-primary" %}
+  </form>
+{% endblock %}

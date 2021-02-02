@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+  <h1 class="mt-2">Логаут</h1>
+  <hr class="mt-0 mb-4">
+
+  <a href="{% url 'notes:home' %}">вернуться на главную</a>
+
+{% endblock %}
