@@ -23,6 +23,7 @@ migrations/
 .LSOverride
 
 media/
+static/
 
 db.sqlite3
 
